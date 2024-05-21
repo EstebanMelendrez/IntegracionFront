@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+</head>
+<body>
+    <h1>Actualizar Tarea</h1>
+    <form id="updateTaskForm">
+        <label for="id">ID de la Tarea</label>
+        <input type="text" id="id" name="id" required>
+
+        <label for="title">Titulo</label>
+        <input type="text" id="title" name="title">
+
+        <label for="state">Estado</label>
+        <input type="text" name="state" id="state">
+
+        <label for="description">Descripción</label>
+        <textarea name="description" id="description" ></textarea>
+
+        <label for="creationDate">Fecha de creación</label>
+        <input type="datetime-local" id="creationDate" name="creationDate">
+
+        <label for="limitDate">Fecha Limite</label>
+        <input type="datetime-local" id="limitDate" name="limitDate">
+
+        <label for="tagIds">Ids de Tags</label>
+        <input type="text" id="tagIds" name="tagIds">
+
+        <button type="submit">Actualizar Tarea</button>
+
+        <div id="result"></div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
